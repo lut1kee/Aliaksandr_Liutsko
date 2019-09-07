@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOW-TO: Программа на Python, Часть 1</title>
+</head>
+<body>
+    <a href="index.html">Назад на главную</a>
+    <h1>HOW-TO: Программа на Python, Часть 1</h1>
+    <img src="img/Python1.png" alt="Python" title="Python" width="360" style="float: right">
+    <ul>
+        <li><a href="#">Программа на Python — часть 1</a></li>
+        <li><a href="python_02_link.html">Программа на Python — часть 2</a></li>
+        <li><a href="python_03_link.html">Программа на Python — часть 3</a></li>
+    </ul>
+    <h2 id="content">Содержание</h2>
+    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+    <ul>
+        <li><a href="#first_program">Наща первая программа</a></li>
+        <li><a href="#for">Пример цикла For</a></li>
+    </ul>
+    <h2  id="first_program">Наша первая программа</h2>
+    <a href="#content">К содержанию</a>
+    <p>Наберем код в текстовом редакторе (например, в gedit). Потом мы размебрёмся,
+        что даелает каждая строка и пойдём дальше.</p>
+    <p>Введите эти 4 строки:<br><br></p>
+    <pre>#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"</pre>
+    <p>Это всё. Сохраните файл как hello.py в любом месте. Я предлагаю сохранить его в папке
+        python_examples в домашнем каталоге.  Этот пример показывает, как просто написать программу на
+        Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале</p>
+    <pre>chmod +x hello.py</pre>
+    <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+    <pre>greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$</pre>
+    <p>Вот и всё.</p>
+    <h2 id="for">Пример цикла For</h2>
+    <a href="#content">К содержанию</a>
+    <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и
+        наберите следующую программу:</p>
+    <pre>#!/usr/bin/env python
+for cntr in range(0,10):
+print cntr</pre>
+    <p>Не забудьте поставить символ табуляции перед строкой «print cntr». Это важно. В Python для
+        указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках
+        программирования, а отступы. </p>
+    <div>
+    <a href="#"><img src="img/prev.png" alt="preview" title="preview" style="float: left"></a>
+    <a href="python_02_link.html"><img src="img/next.png" alt="next" style="float: right" title="next"></a>
+    <a href="#content"><img src="img/home.png" alt="home" title="home" style="display: block; margin:  0 auto"></a>
+    </div>
+</body>
+</html>
